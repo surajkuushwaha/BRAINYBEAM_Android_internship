@@ -13,4 +13,22 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="bold_20_textview" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/sansation_bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="regular_18_edittext" parent="Widget.AppCompat.EditText">
+        <item name="fontFamily">@font/sansation_regular</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black_gray</item>
+    </style>
+
+    <style name="bold_20_button" parent="Widget.AppCompat.Button">
+        <item name="fontFamily">@font/sansation_bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 </resources>
