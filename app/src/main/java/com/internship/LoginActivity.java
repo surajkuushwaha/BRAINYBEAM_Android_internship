@@ -36,8 +36,9 @@ public class LoginActivity extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(LoginActivity.this,SignupActivity.class);
-                startActivity(intent);
+//                Intent intent= new Intent(LoginActivity.this,SignupActivity.class);
+//                startActivity(intent);
+                new CommonMethod(LoginActivity.this,SignupActivity.class);
             }
         });
 
@@ -56,18 +57,23 @@ public class LoginActivity extends AppCompatActivity {
                         System.out.println("Button clicked!!!!!!!!");
                         Log.d("Print", "Button clicked log!!!!!");
                         Log.e("Print", "Button clicked log!!!!!");
-                        Toast.makeText(LoginActivity.this, "Login sucessfull", Toast.LENGTH_SHORT).show();
-                        Snackbar.make(v, "Login sucessfull", BaseTransientBottomBar.LENGTH_SHORT).show();
-
-                        Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
-                        startActivity(intent);
+//                        Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
+//                        Snackbar.make(v, "Login successful", BaseTransientBottomBar.LENGTH_SHORT).show();
+//
+//                        Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
+//                        startActivity(intent);
+                        new CommonMethod(LoginActivity.this,"Login successful");
+                        new CommonMethod(v,"Login successful");
+                        new CommonMethod(LoginActivity.this,HomeActivity.class);
 
                     }else{
                         System.out.println("Button clicked!!!!!!!!");
                         Log.d("Print", "Button clicked log!!!!!");
                         Log.e("Print", "Button clicked log!!!!!");
-                        Toast.makeText(LoginActivity.this, "Login unsucessfull", Toast.LENGTH_SHORT).show();
-                        Snackbar.make(v, "Login unsucessfull", BaseTransientBottomBar.LENGTH_SHORT).show();
+//                        Toast.makeText(LoginActivity.this, "Login unsuccessful", Toast.LENGTH_SHORT).show();
+//                        Snackbar.make(v, "Login unsuccessful", BaseTransientBottomBar.LENGTH_SHORT).show();
+                        new CommonMethod(LoginActivity.this,"Login unsuccessful");
+                        new CommonMethod(v,"Login unsuccessful");
 
                     }
                 }

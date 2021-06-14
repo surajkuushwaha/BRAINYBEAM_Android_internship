@@ -18,6 +18,11 @@
         <item name="android:textSize">20dp</item>
         <item name="android:textColor">@color/black</item>
     </style>
+    <style name="bold_16_textview" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/sansation_bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 
     <style name="regular_18_edittext" parent="Widget.AppCompat.EditText">
         <item name="fontFamily">@font/sansation_regular</item>
@@ -27,6 +32,11 @@
     </style>
 
     <style name="bold_20_button" parent="Widget.AppCompat.Button">
+        <item name="fontFamily">@font/sansation_bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="bold_18_button" parent="Widget.AppCompat.Button">
         <item name="fontFamily">@font/sansation_bold</item>
         <item name="android:textSize">20dp</item>
         <item name="android:textColor">@color/black</item>
